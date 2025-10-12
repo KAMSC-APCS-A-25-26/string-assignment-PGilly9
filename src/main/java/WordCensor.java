@@ -31,6 +31,11 @@ public class WordCensor {
         // TODO: Print the result prefixed with: Censored:
 
         // NOTE: Tests require exactly three asterisks (no ****) for every replacement
-        System.out.println(newText);
+        if (newText != null) {
+            System.out.println("Censored: " + newText);
+        }
+        else{
+            System.out.println("Censored: " + text);
+        }
     }
 }
