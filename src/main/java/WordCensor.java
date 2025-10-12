@@ -13,16 +13,16 @@ public class WordCensor {
         // TODO: Replace each banned word with exactly ***: dang, nuts, oops, yikes
         String newText = null;
         if (text.contains("dang")) {
-            newText = text.replaceAll("dang", "***");
+            newText = text.replaceAll("dang|nuts|oops|yikes", "***");
         }
         if (text.contains("nuts")) {
-            newText = text.replaceAll("nuts", "***");
+            newText = text.replaceAll("dang|nuts|oops|yikes", "***");
         }
         if (text.contains("oops")) {
-            newText = text.replaceAll("oops", "***");
+            newText = text.replaceAll("dang|nuts|oops|yikes", "***");
         }
         if (text.contains("yikes")) {
-            newText = text.replaceAll("yikes", "***");
+            newText = text.replaceAll("dang|nuts|oops|yikes", "***");
         }
 
 
